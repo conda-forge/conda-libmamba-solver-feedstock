@@ -1,5 +1,5 @@
 {% set name = "conda-libmamba-solver" %}
-{% set version = "22.3.0" %}
+{% set version = "22.3.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,12 +7,12 @@ package:
 
 source:
   url: https://github.com/conda-incubator/conda-libmamba-solver/archive/{{ version }}.tar.gz  # temporary
-  sha256: 0b6121974b8ffac0437652275fde94818164408ecf99d02b6ea9346622bb95c7
+  sha256: 92811a3a095a2b62e6ef3b027df099e681bfffb606f977fe49fe9c66055dd54e
 
 build:
   noarch: python
   number: 0
-  script: "{{ PYTHON }} -m pip install . -vv"
+  script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
   host:
@@ -36,7 +36,7 @@ about:
   license: BSD-3-Clause
   license_family: BSD
   license_file: LICENSE
-  summary: 'The fast mamba solver, now in conda!'
+  summary: The fast mamba solver, now in conda!
 
 extra:
   recipe-maintainers:
