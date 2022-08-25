@@ -8,6 +8,8 @@ package:
 source:
   url: https://github.com/conda-incubator/conda-libmamba-solver/archive/{{ version }}.tar.gz  # temporary
   sha256: c5978f2820d45fc40dde71de152a4f93e7a6518341af5d5aae443a90302c56f2
+  patches:
+    - version.patch
 
 build:
   noarch: python
