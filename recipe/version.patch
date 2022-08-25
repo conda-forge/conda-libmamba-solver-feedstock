@@ -1,0 +1,10 @@
+diff --git a/conda_libmamba_solver/__init__.py b/conda_libmamba_solver/__init__.py
+index 4fdc772..e5e7bdf 100644
+--- a/conda_libmamba_solver/__init__.py
++++ b/conda_libmamba_solver/__init__.py
+@@ -1,4 +1,4 @@
+-__version__ = "22.6.0"
++__version__ = "22.8.0"
+ 
+ from warnings import warn as _warn
+ from .solver import LibMambaSolver
