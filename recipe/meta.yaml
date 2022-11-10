@@ -6,7 +6,7 @@ package:
   version: {{ version }}
 
 source:
-  url: https://github.com/conda-incubator/conda-libmamba-solver/archive/{{ version }}.tar.gz  # temporary
+  url: https://github.com/conda/conda-libmamba-solver/archive/{{ version }}.tar.gz  # temporary
   sha256: 90d74148ed26dc0e1500f368b0b8b4097f792fe7612f402f05db5f01ec534cdf
 
 build:
@@ -33,7 +33,7 @@ test:
     - CONDA_EXPERIMENTAL_SOLVER=libmamba conda create -n test --dry-run scipy
 
 about:
-  home: https://github.com/conda-incubator/conda-libmamba-solver
+  home: https://github.com/conda/conda-libmamba-solver
   license: BSD-3-Clause
   license_family: BSD
   license_file: LICENSE
