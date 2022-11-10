@@ -1,7 +1,7 @@
 About conda-libmamba-solver
 ===========================
 
-Home: https://github.com/conda-incubator/conda-libmamba-solver
+Home: https://github.com/conda/conda-libmamba-solver
 
 Package license: BSD-3-Clause
 
