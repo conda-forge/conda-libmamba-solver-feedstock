@@ -22,7 +22,7 @@ requirements:
   run:
     - python >=3.6
     - libmambapy >=1.0.0
-    - conda >=23.1.0
+    - conda >=22.11.0
     - importlib-metadata
 
 test:
