@@ -6,7 +6,7 @@ package:
   version: {{ version }}
 
 source:
-  url: https://github.com/conda/conda-libmamba-solver/archive/{{ version }}.tar.gz  # temporary
+  url: https://github.com/conda/conda-libmamba-solver/archive/{{ version }}.tar.gz
   sha256: 0c209980d10d2acf3bb070f2a00c157319efc49f313e23992f7c350a37d98a87
   folder: src/
 
