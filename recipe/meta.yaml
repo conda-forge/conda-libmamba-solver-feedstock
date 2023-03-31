@@ -13,6 +13,8 @@ source:
 build:
   noarch: python
   number: 0
+  script_env:
+    - SETUPTOOLS_SCM_PRETEND_VERSION={{version}}
   script: {{ PYTHON }} -m pip install src/ -vv
 
 requirements:
