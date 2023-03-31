@@ -1,11 +1,11 @@
-About conda-libmamba-solver
-===========================
+About conda-libmamba-solver-feedstock
+=====================================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/conda-libmamba-solver-feedstock/blob/main/LICENSE.txt)
 
 Home: https://github.com/conda/conda-libmamba-solver
 
 Package license: BSD-3-Clause
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/conda-libmamba-solver-feedstock/blob/main/LICENSE.txt)
 
 Summary: The fast mamba solver, now in conda!
 
