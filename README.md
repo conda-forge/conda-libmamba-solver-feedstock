@@ -1,7 +1,7 @@
 About conda-libmamba-solver-feedstock
 =====================================
 
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/conda-libmamba-solver-conda-forge-feedstock/blob/main/LICENSE.txt)
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/conda-libmamba-solver-feedstock/blob/main/LICENSE.txt)
 
 Home: https://github.com/conda/conda-libmamba-solver
 
@@ -20,7 +20,7 @@ Current build status
 <table><tr><td>All platforms:</td>
     <td>
       <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=&branchName=main">
-        <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/conda-libmamba-solver-conda-forge-feedstock?branchName=main">
+        <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/conda-libmamba-solver-feedstock?branchName=main">
       </a>
     </td>
   </tr>
