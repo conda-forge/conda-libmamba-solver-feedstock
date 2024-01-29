@@ -1,5 +1,5 @@
 {% set name = "conda-libmamba-solver" %}
-{% set version = "23.12.0" %}
+{% set version = "24.1.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://github.com/conda/conda-libmamba-solver/archive/{{ version }}.tar.gz
-  sha256: c23210bb5ab81d68ac28ed8f355fe95acc85c246686d4b2ec3924863fc07bb51
+  sha256: 104c4362502507de7dbbf28a0cb522c0204258cefcdd986adb21ea6a7033263d
   folder: src/
 
 build:
@@ -26,7 +26,7 @@ requirements:
   run:
     - python >=3.8
     - conda >=23.7.4
-    - libmambapy >=1.5.3
+    - libmambapy >=1.5.6,<2.0a0
     - boltons >=23.0.0
 
 test:
