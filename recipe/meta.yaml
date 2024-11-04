@@ -6,8 +6,8 @@ package:
   version: {{ version }}
 
 source:
-  url: https://github.com/conda/conda-libmamba-solver/archive/9dc525e62499e6ccbf10cd2053a523f3753dddb1.tar.gz
-  sha256: 626e568f7067c76064f686d28d29bcf380dca79adb56780013fd7b7b0c6d171b
+  url: https://github.com/conda/conda-libmamba-solver/archive/{{ version }}.tar.gz
+  sha256: 1cc1cd12159ba67de40702c063662dcb6b8dcc643f6064977c8c004580f4ad23
   folder: src/
 
 build:
