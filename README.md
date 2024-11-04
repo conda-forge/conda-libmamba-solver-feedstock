@@ -36,14 +36,14 @@ Current release info
 Installing conda-libmamba-solver
 ================================
 
-Installing `conda-libmamba-solver` from the `conda-forge` channel can be achieved by adding `conda-forge` to your channels with:
+Installing `conda-libmamba-solver` from the `conda-forge/label/conda-libmamba-solver_rc` channel can be achieved by adding `conda-forge/label/conda-libmamba-solver_rc` to your channels with:
 
 ```
-conda config --add channels conda-forge
+conda config --add channels conda-forge/label/conda-libmamba-solver_rc
 conda config --set channel_priority strict
 ```
 
-Once the `conda-forge` channel has been enabled, `conda-libmamba-solver` can be installed with `conda`:
+Once the `conda-forge/label/conda-libmamba-solver_rc` channel has been enabled, `conda-libmamba-solver` can be installed with `conda`:
 
 ```
 conda install conda-libmamba-solver
@@ -58,26 +58,26 @@ mamba install conda-libmamba-solver
 It is possible to list all of the versions of `conda-libmamba-solver` available on your platform with `conda`:
 
 ```
-conda search conda-libmamba-solver --channel conda-forge
+conda search conda-libmamba-solver --channel conda-forge/label/conda-libmamba-solver_rc
 ```
 
 or with `mamba`:
 
 ```
-mamba search conda-libmamba-solver --channel conda-forge
+mamba search conda-libmamba-solver --channel conda-forge/label/conda-libmamba-solver_rc
 ```
 
 Alternatively, `mamba repoquery` may provide more information:
 
 ```
 # Search all versions available on your platform:
-mamba repoquery search conda-libmamba-solver --channel conda-forge
+mamba repoquery search conda-libmamba-solver --channel conda-forge/label/conda-libmamba-solver_rc
 
 # List packages depending on `conda-libmamba-solver`:
-mamba repoquery whoneeds conda-libmamba-solver --channel conda-forge
+mamba repoquery whoneeds conda-libmamba-solver --channel conda-forge/label/conda-libmamba-solver_rc
 
 # List dependencies of `conda-libmamba-solver`:
-mamba repoquery depends conda-libmamba-solver --channel conda-forge
+mamba repoquery depends conda-libmamba-solver --channel conda-forge/label/conda-libmamba-solver_rc
 ```
 
 
