@@ -4,3 +4,4 @@ github:
 conda_forge_output_validation: true
 conda_build:
   pkg_format: '2'
+upload_on_branch: rc
