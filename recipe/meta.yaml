@@ -19,17 +19,19 @@ build:
 
 requirements:
   host:
-    - python >=3.8
+    - python {{ python_min }}
     - pip
     - hatchling
     - hatch-vcs
   run:
-    - python >=3.8
+    - python >={{ python_min }}
     - conda >=23.7.4
-    - libmambapy >=1.5.6,<2.0a0
+    - libmambapy >=2.0.0
     - boltons >=23.0.0
 
 test:
+  requires:
+    - python {{ python_min }}
   imports:
     - conda_libmamba_solver
   commands:
