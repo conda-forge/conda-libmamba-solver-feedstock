@@ -1,0 +1,58 @@
+context:
+  name: conda-libmamba-solver
+  version: 24.11.1
+
+package:
+  name: ${{ name|lower }}
+  version: ${{ version }}
+
+source:
+  url: https://github.com/conda/conda-libmamba-solver/archive/${{ version }}.tar.gz
+  sha256: 8a3bfe1c8fb1a2ad599ba0eef31084145dbb105e58ec5a21e06990edec71d035
+  target_directory: src/
+
+build:
+  number: 1
+  noarch: python
+  script:
+    env:
+      SETUPTOOLS_SCM_PRETEND_VERSION: ${{ version }}
+    content: $PYTHON -m pip install src/ --no-deps -vv
+
+requirements:
+  host:
+    - python ${{ python_min }}.*
+    - pip
+    - hatchling
+    - hatch-vcs
+  run:
+    - python >=${{ python_min }}
+    - conda >=23.7.4
+    - libmambapy >=2.0.0
+    - boltons >=23.0.0
+
+tests:
+  - python:
+      imports:
+        - conda_libmamba_solver
+      python_version: ${{ python_min }}.*
+  - requirements:
+      run:
+        - python ${{ python_min }}.*
+    script:
+      - conda create -n test --dry-run scipy --solver=libmamba
+      - CONDA_SOLVER=libmamba conda create -n test --dry-run scipy
+
+about:
+  license: BSD-3-Clause
+  license_file: src/LICENSE
+  summary: The fast mamba solver, now in conda!
+  homepage: https://github.com/conda/conda-libmamba-solver
+  repository: https://github.com/conda/conda-libmamba-solver
+  documentation: https://conda.github.io/conda-libmamba-solver/
+
+extra:
+  recipe-maintainers:
+    - jaimergp
+    - jezdez
+    - wolfv
