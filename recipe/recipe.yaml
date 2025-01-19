@@ -17,7 +17,7 @@ build:
   script:
     env:
       SETUPTOOLS_SCM_PRETEND_VERSION: ${{ version }}
-    content: ${{ PYTHON }} -m pip install src/ -vv
+    content: $PYTHON -m pip install src/ --no-deps -vv
 
 requirements:
   host:
