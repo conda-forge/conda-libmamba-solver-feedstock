@@ -151,6 +151,3 @@ Feedstock Maintainers
 * [@jezdez](https://github.com/jezdez/)
 * [@wolfv](https://github.com/wolfv/)
 
-
-<!-- dummy commit to enable rerendering -->
-
