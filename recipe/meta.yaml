@@ -1,5 +1,5 @@
 {% set name = "conda-libmamba-solver" %}
-{% set version = "25.4.0" %}
+{% set version = "25.11.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://github.com/conda/conda-libmamba-solver/archive/{{ version }}.tar.gz
-  sha256: a00bd98681607b1db5783f680e3375931ad990b7d19ae1ebf6987c20330bbfa9
+  sha256: a187016471bc561405ea66266f26c0f81637f6e85b4d8663a6724717dc715f50
   folder: src/
 
 build:
@@ -25,9 +25,12 @@ requirements:
     - hatch-vcs
   run:
     - python >={{ python_min }}
-    - conda >=24.11
+    - conda >=25.9
     - libmambapy >=2.0.0
     - boltons >=23.0.0
+    - msgpack-python >=1.1.1
+    - requests >=2.28.0,<3
+    - zstandard >=0.15
 
 test:
   requires:
