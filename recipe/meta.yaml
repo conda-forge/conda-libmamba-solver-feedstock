@@ -12,7 +12,7 @@ source:
 
 build:
   noarch: python
-  number: 0
+  number: 1
   script_env:
     - SETUPTOOLS_SCM_PRETEND_VERSION={{ version }}
   script: {{ PYTHON }} -m pip install src/ -vv
@@ -25,12 +25,13 @@ requirements:
     - hatch-vcs
   run:
     - python >={{ python_min }}
-    - conda >=25.9
     - libmambapy >=2.0.0
     - boltons >=23.0.0
     - msgpack-python >=1.1.1
     - requests >=2.28.0,<3
     - zstandard >=0.15
+  run_constrained:
+    - conda >=25.9
 
 test:
   requires:
