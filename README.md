@@ -20,7 +20,9 @@ Current build status
 <table><tr>
     <td>All platforms:</td>
     <td>
-      <img src="https://img.shields.io/badge/noarch-disabled-lightgrey.svg" alt="noarch disabled">
+      <a href="https://github.com/conda-forge/conda-libmamba-solver-feedstock/actions/workflows/conda-build.yml">
+        <img src="https://github.com/conda-forge/conda-libmamba-solver-feedstock/actions/workflows/conda-build.yml/badge.svg?event=push&branch=main">
+      </a>
     </td>
   </tr>
 </table>
@@ -149,7 +151,4 @@ Feedstock Maintainers
 * [@jaimergp](https://github.com/jaimergp/)
 * [@jezdez](https://github.com/jezdez/)
 * [@wolfv](https://github.com/wolfv/)
-
-
-<!-- dummy commit to enable rerendering -->
 
