@@ -1,5 +1,5 @@
 {% set name = "conda-libmamba-solver" %}
-{% set version = "26.4.2" %}
+{% set version = "26.6.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://github.com/conda/conda-libmamba-solver/archive/{{ version }}.tar.gz
-  sha256: d69a45db04785a1a48d29d98ee4ce6c19147be4703866a23c6b0da1de12b5378
+  sha256: bed1f00dcd0001203aac7f60d8986965b6fbafb4e83ef8c2a4b5a726253172ec
   folder: src/
 
 build:
