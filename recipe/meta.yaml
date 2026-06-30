@@ -31,7 +31,7 @@ requirements:
     # This is technically a `run` dependency (we do import it), but
     # conda already depends on conda-libmamba-solver, so it creates a
     # dependency cycle that complicates migrations
-    - conda >=25.9
+    - conda >=26.5
 
 test:
   requires:
