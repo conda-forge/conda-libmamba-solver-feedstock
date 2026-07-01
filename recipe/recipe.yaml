@@ -1,7 +1,7 @@
 schema_version: 1
 
 context:
-  version: "26.4.2"
+  version: "26.6.0"
 
 package:
   name: conda-libmamba-solver
@@ -9,11 +9,11 @@ package:
 
 source:
   url: https://github.com/conda/conda-libmamba-solver/archive/${{ version }}.tar.gz
-  sha256: d69a45db04785a1a48d29d98ee4ce6c19147be4703866a23c6b0da1de12b5378
+  sha256: bed1f00dcd0001203aac7f60d8986965b6fbafb4e83ef8c2a4b5a726253172ec
   target_directory: src/
 
 build:
-  number: 1
+  number: 0
   noarch: python
   script:
     env:
@@ -28,16 +28,13 @@ requirements:
     - hatch-vcs
   run:
     - python >=${{ python_min }}
-    - libmambapy >=2.0.0
+    - libmambapy >=2.0.0,!=2.6.2
     - boltons >=23.0.0
-    - msgpack-python >=1.1.1
-    - requests >=2.28.0,<3
-    - zstandard >=0.15
   run_constraints:
     # This is technically a `run` dependency (we do import it), but
     # conda already depends on conda-libmamba-solver, so it creates a
     # dependency cycle that complicates migrations
-    - conda >=25.9
+    - conda >=26.5
 
 tests:
   - python:
