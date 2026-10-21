@@ -13,7 +13,7 @@ source:
   target_directory: src/
 
 build:
-  number: 0
+  number: 1
   noarch: python
   script:
     env:
@@ -35,6 +35,8 @@ requirements:
     # conda already depends on conda-libmamba-solver, so it creates a
     # dependency cycle that complicates migrations
     - conda >=26.5
+    - certifi >=2026.10.19
+    - ca-certificates >=2026.10.19
 
 tests:
   - python:
