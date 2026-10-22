@@ -1,7 +1,7 @@
 schema_version: 1
 
 context:
-  version: "26.7.0"
+  version: "26.10.0"
 
 package:
   name: conda-libmamba-solver
@@ -9,11 +9,11 @@ package:
 
 source:
   url: https://github.com/conda/conda-libmamba-solver/archive/${{ version }}.tar.gz
-  sha256: 785d6035eedf511c6755d53a5ff34634a56427be49fd337bb6433c2270b4fdb6
+  sha256: 21f5f82d3ff2735aed7c1c676222017f85efa186c803abf66e8d38c6e1e5d788
   target_directory: src/
 
 build:
-  number: 1
+  number: 0
   noarch: python
   script:
     env:
