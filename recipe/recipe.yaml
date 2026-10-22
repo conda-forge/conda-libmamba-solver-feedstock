@@ -28,13 +28,13 @@ requirements:
     - hatch-vcs
   run:
     - python >=${{ python_min }}
-    - libmambapy >=2.0.0,!=2.6.2
+    - libmambapy >=2.3.2,!=2.6.2
     - boltons >=23.0.0
   run_constraints:
     # This is technically a `run` dependency (we do import it), but
     # conda already depends on conda-libmamba-solver, so it creates a
     # dependency cycle that complicates migrations
-    - conda >=26.5
+    - conda >=26.7.1
     - certifi >=2026.10.19
     - ca-certificates >=2026.10.19
 
